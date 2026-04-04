@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{ error }}
+    <form method="POST" action="{{url_for('main')}}">
+        {{ form.csrf_token }}
+        {{ form.username.label }}
+        {{ form.username }}
+        {{ form.password.label }}
+        {{ form.password }}
+        {{ form.email.label }}
+        {{ form.email }}
+        {{ form.fio.label }}
+        {{ form.fio }}
+        {{ form.phone.label }}
+        {{ form.phone }}
+        <button class="btn_submit" type="submit">Подтвердить</button>
+    </form>
+</body>
+</html>
