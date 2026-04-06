@@ -5,7 +5,7 @@ import sqlalchemy.orm
 import os
 # инициализируем апу 
 app = flask.Flask(import_name=__name__, template_folder=os.getcwd())
-conn_string = "postgresql+psycopg2://postgres:admin@127.0.0.1:5433/ne_oleg_DB"
+conn_string = "postgresql+psycopg2://postgres:122345@127.0.0.1:5432/Ne_oleg"
 engine = sqlalchemy.create_engine(conn_string)
 cyr_str="абвгдеёжзиклмнопрстуфхцчшщъыьэюя"
 
